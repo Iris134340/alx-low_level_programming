@@ -2,8 +2,8 @@
 
 /**
  * main - causes an infinite loop
- * Retunr: 0 (Success)
- */
+ * Retunr: 0
+*/
 
 int main(void)
 {
