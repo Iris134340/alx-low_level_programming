@@ -13,23 +13,23 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-	int destSize = 0;
-	int srcSize = 0;
+	int destSz = 0;
+	int srcSz = 0;
 
 	for (i = 0 ; src[i] != '\0' ; i++)
-		srcSize++;
+		srcSz++;
 
 	for (i = 0 ; dest[i] != '\0' ; i++)
-		destSize++;
+		destSz++;
 
 	for (i = 0 ; i < n ; i++)
 	{
-		if (n < destSize)
-			dest[destSize + i] = src[i];
-		else if (n >= destSize)
+		if (n < srcSz)
+			dest[destSz + i] = src[i];
+		else if (n >= srcSz)
 		{
-			dest[destSize + i] = src[i];
-			dest[destSize + i] = '\0';
+			dest[destSz + i] = src[i];
+			dest[destSz + i] = '\0';
 		}
 	}
 
